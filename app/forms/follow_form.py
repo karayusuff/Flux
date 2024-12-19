@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField
-from app.models import Follow
+from wtforms.validators import Length
 
 
 class FollowForm(FlaskForm):
-    text = StringField('text')
+    note = StringField('note', validators=[Length(max=255)])
