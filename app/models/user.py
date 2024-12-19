@@ -28,6 +28,6 @@ class User(db.Model, UserMixin):
     def to_dict(self):
         return {"id": self.id, "username": self.username, "email": self.email}
 
-    comments = db.relationship(
-        "Comment", back_populates="user", cascade="all, delete-orphan"
-    )
+    # comments = db.relationship(
+    #     "Comment", back_populates="user", cascade="all, delete-orphan"
+    # )
