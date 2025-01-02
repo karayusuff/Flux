@@ -75,7 +75,7 @@
   font-weight: bold;
 }
 
-.follow_tex:hover {
+.follow_text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -115,26 +115,57 @@
   width: 560px;
 }
 
-.likes_container {
-
-}
-
 .likes_container:hover .likes_count {
   opacity: 1;
   visibility: visible;
+  margin-left: 240px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+}
+
+.comment_container:hover .comment_count {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 240px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
 }
 .heart_icon {
   margin-right: 5px;
   cursor: pointer;
 }
 
+.comment_icon {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
 .likes_count {
   position: absolute;
-  top: 50%;
+  top: 47.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: #222222; 
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Sour GUmmy';
+  opacity: 0; 
+  visibility: hidden; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin-left: 240px;
+  margin-bottom: 2px;
+
+}
+
+.comment_count {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   padding: 5px;
   border-radius: 5px;
   font-size: 14px;
@@ -142,9 +173,12 @@
   visibility: hidden; 
   pointer-events: none; 
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+  margin-left: 240px;
+  margin-bottom: 2px;
 
 }
-
 .landing_page_button_container {
   display: flex;
   justify-content: space-evenly;

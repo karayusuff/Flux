@@ -7,7 +7,7 @@
   }
   
   .post_picture {
-    width: 685px;
+    width: 695px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
   
   .post_img {
     height: 75vh;
-    width: 685px;
+    width: 90%;
   } 
   
   .post_img:hover {
@@ -28,13 +28,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #25644b;
+    background-color: #222222;
     height: 50px;
     margin-top: -4px;
     margin-bottom: 15px;
-    border-bottom-right-radius: 2%;
-    border-bottom-left-radius: 2%;
-    width: 685px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90%;
     position: sticky;
     object-fit: contain;  
     
@@ -58,5 +58,69 @@
     width: 560px;
   }
   
+  .likes_container:hover .likes_count {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 240px;
+    background-color: #222222;
+    font-family: 'Sour Gummy';
+  }
+  
+  .comment_container:hover .comment_count {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 240px;
+    background-color: #222222;
+    font-family: 'Sour Gummy';
+  }
+  .heart_icon {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .comment_icon {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .likes_count {
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #222222; 
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Sour GUmmy';
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin-left: 240px;
+    margin-bottom: 2px;
+  
+  }
+  
+  .comment_count {
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: #222222;
+    font-family: 'Sour Gummy';
+    margin-left: 240px;
+    margin-bottom: 2px;
+  
+  }
 
   

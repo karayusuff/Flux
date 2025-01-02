@@ -51,4 +51,5 @@ font-family: 'Sour Gummy';
 
 #users-list li:hover {
   border: solid 1px #46976A;
+  color: white;
 }
