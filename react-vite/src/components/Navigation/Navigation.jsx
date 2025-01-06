@@ -13,7 +13,7 @@ import { RiUserFollowFill } from "react-icons/ri";
 import { IoLogOut } from "react-icons/io5";
 import { IoLogIn } from "react-icons/io5";
 import { SiFlux } from "react-icons/si";
-import logo from '../../../public/flux-high-resolution-logo.png';
+import logo from '../../../../images/flux-high-resolution-logo.png';
 import "./Navigation.css";
 
 function Navigation() {

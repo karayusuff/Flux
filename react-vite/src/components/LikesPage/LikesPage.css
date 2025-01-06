@@ -1,173 +1,196 @@
 .post_section_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 
-  }
+}
 
-  .h1_container {
-    width: 100%;
-    border-bottom: #222222 solid 1px;
-  }
+.h1_container {
+  width: 100%;
+  border-bottom: #222222 solid 1px;
+}
 
-  #h1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: 'Sour Gummy';
-    margin-left: 4.5%;
-  }
+#h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Sour Gummy';
+  margin-left: 4.5%;
+}
 
-  .likes_img {
-    height: 75vh;
-    width: 90%;
-    object-fit: cover;
-  } 
+.likes_img {
+  height: 75vh;
+  width: 90%;
+  object-fit: cover;
+} 
 
-  .likes_img:hover {
-    cursor: pointer;
-  }
+.likes_img:hover {
+  cursor: pointer;
+}
 
-  .added_info_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #222222;
-    height: 50px;
-    margin-top: -4px;
-    margin-bottom: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 90%;
-    position: sticky;
-    object-fit: contain;  
+.added_info_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  height: 50px;
+  margin-top: -4px;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 90%;
+  position: sticky;
+  object-fit: contain;  
 
-  }
+}
 
-  .post_added_info {
-    font-family: 'Sour Gummy';
-    color: white;
-    object-fit: contain;
-    margin-left: 10px;
+.post_added_info {
+  font-family: 'Sour Gummy';
+  color: white;
+  object-fit: contain;
+  margin-left: 10px;
 
-  }
+}
 
-  .post_description {
-    font-family: 'Sour Gummy';
-    color: white;
-    object-fit: contain;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 560px;
-  }
+.post_description {
+  font-family: 'Sour Gummy';
+  color: white;
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 560px;
+}
 
-  .likes_container:hover .likes_count {
-    opacity: 1;
-    visibility: visible;
-    margin-left: 240px;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-  }
+.likes_container:hover .likes_count {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 240px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+}
 
-  .note_container:hover .note{
-    opacity: 1;
-    visibility: visible;
-    margin-left: 150px;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-    width: 150px;
-  }
-  .heart_icon {
-    margin-right: 5px;
-    cursor: pointer;
-  }
+.note_container:hover .note{
+  opacity: 1;
+  visibility: visible;
+  margin-left: 150px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+  width: 150px;
+}
+.heart_icon {
+  margin-right: 5px;
+  cursor: pointer;
+}
 
-  .note_icon {
-    margin-right: 5px;
-    cursor: pointer;
-    color: white;
-  }
+.note_icon {
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+}
 
-  .likes_count {
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #222222; 
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: 'Sour GUmmy';
-    opacity: 0; 
-    visibility: hidden; 
-    pointer-events: none; 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    margin-left: 240px;
-    margin-bottom: 2px;
+.likes_count {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #222222; 
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Sour GUmmy';
+  opacity: 0; 
+  visibility: hidden; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin-left: 240px;
+  margin-bottom: 2px;
 
-  }
+}
 
-  .note {
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    opacity: 0; 
-    visibility: hidden; 
-    pointer-events: none; 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-    margin-left: 150px;
-    margin-bottom: 2px;
-    width: 150px;
+.note {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0; 
+  visibility: hidden; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+  margin-left: 150px;
+  margin-bottom: 2px;
+  width: 150px;
 
-  }
+}
 
-  .user_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:flex-start;
-    background-color: #222222;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: -4px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    width: 90%;
-    position: sticky;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 5px;
-    color: white;
-    font-family: 'Sour Gummy';
-  }
+.user_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+  background-color: #222222;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: -4px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 90%;
+  position: sticky;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  color: white;
+  font-family: 'Sour Gummy';
+}
 
-  #user_a_tag {
-    text-decoration: none;
-    color: white;
-  }
+#user_a_tag {
+  text-decoration: none;
+  color: white;
+}
 
-  #user_a_tag:hover {
-    text-decoration: underline;
-  }
+#user_a_tag:hover {
+  text-decoration: underline;
+}
 
-  #follow_me {
-    color: #46976A;
-    font-weight: bold;
-  }
+#follow_me {
+  color: #46976A;
+  font-weight: bold;
+}
 
-  #follow_me:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
+#follow_me:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.post_container {
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.posts_section_3 {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.posts_section_3::-webkit-scrollbar {
+  display: none; 
+}
+
+.posts_section_4 {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.posts_section_4::-webkit-scrollbar {
+  display: none; 
+}

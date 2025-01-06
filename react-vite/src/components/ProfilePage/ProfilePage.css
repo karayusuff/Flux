@@ -1,191 +1,201 @@
 .posts_section_4 {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    border-left: solid #222222 .5px;
-    border-right: solid #222222 .5px;
-    width: 695px;
+  border-left: solid #222222 .5px;
+  border-right: solid #222222 .5px;
+  width: 695px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.posts_section_4::-webkit-scrollbar {
+  display: none; 
+}
 
-  }
+.posts_section_3 {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
 
-  .post_section_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    
-  }
+.posts_section_3::-webkit-scrollbar {
+  display: none; 
+}
 
-  .post_picture {
-    width: 695px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.post_section_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
 
-  .post_img {
-    height: 75vh;
-    width: 90%;
-  } 
+.post_picture {
+  width: 695px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .post_img:hover {
-    cursor: pointer;
-  }
+.post_img {
+  height: 75vh;
+  width: 90%;
+} 
 
-  .added_info_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #222222;
-    height: 50px;
-    margin-top: -4px;
-    margin-bottom: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 90%;
-    position: sticky;
-    object-fit: contain;  
+.post_img:hover {
+  cursor: pointer;
+}
 
-  }
+.added_info_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  height: 50px;
+  margin-top: -4px;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 90%;
+  position: sticky;
+  object-fit: contain;  
 
-  .post_added_info {
-    font-family: 'Sour Gummy';
-    color: white;
-    object-fit: contain;
-    margin-left: 10px;
+}
 
-  }
+.post_added_info {
+  font-family: 'Sour Gummy';
+  color: white;
+  object-fit: contain;
+  margin-left: 10px;
 
-  .post_description {
-    font-family: 'Sour Gummy';
-    color: white;
-    object-fit: contain;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 560px;
-  }
+}
 
-  .likes_container:hover .likes_count {
-    opacity: 1;
-    visibility: visible;
-    margin-left: 240px;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-  }
+.post_description {
+  font-family: 'Sour Gummy';
+  color: white;
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 560px;
+}
 
-  .comment_container:hover .comment_count {
-    opacity: 1;
-    visibility: visible;
-    margin-left: 240px;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-  }
-  .heart_icon {
-    margin-right: 5px;
-    cursor: pointer;
-  }
+.likes_container:hover .likes_count {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 240px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+}
 
-  .comment_icon {
-    margin-right: 5px;
-    cursor: pointer;
-  }
+.comment_container:hover .comment_count {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 240px;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+}
+.heart_icon {
+  margin-right: 5px;
+  cursor: pointer;
+}
 
-  .likes_count {
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #222222; 
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: 'Sour GUmmy';
-    opacity: 0; 
-    visibility: hidden; 
-    pointer-events: none; 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    margin-left: 240px;
-    margin-bottom: 2px;
+.comment_icon {
+  margin-right: 5px;
+  cursor: pointer;
+}
 
-  }
+.likes_count {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #222222; 
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Sour GUmmy';
+  opacity: 0; 
+  visibility: hidden; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin-left: 240px;
+  margin-bottom: 2px;
 
-  .comment_count {
-    position: absolute;
-    top: 47.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    opacity: 0; 
-    visibility: hidden; 
-    pointer-events: none; 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    background-color: #222222;
-    font-family: 'Sour Gummy';
-    margin-left: 240px;
-    margin-bottom: 2px;
+}
 
-  }
+.comment_count {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0; 
+  visibility: hidden; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: #222222;
+  font-family: 'Sour Gummy';
+  margin-left: 240px;
+  margin-bottom: 2px;
 
-  .user_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:flex-start;
-    background-color: #222222;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: -4px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    width: 90%;
-    position: sticky;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 5px;
-    color: white;
-    font-family: 'Sour Gummy';
-  }
+}
 
-  .manage_post_icon {
-    width: 100%;
-    margin-top: .5%;
-    margin-right: 1.5%;
-    display: flex;
-    justify-content: flex-end;
-  }
+.user_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+  background-color: #222222;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: -4px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 90%;
+  position: sticky;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  color: white;
+  font-family: 'Sour Gummy';
+}
 
-  .manage_post_icon:hover {
-    cursor: pointer;
-  }
+.manage_post_icon {
+  width: 100%;
+  margin-top: .5%;
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: flex-end;
+}
 
-  #h1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: 'Sour Gummy';
-    margin-left: 4.5%;
-    width: 100%;
-    /* height: fit-content; */
-  }
+.manage_post_icon:hover {
+  cursor: pointer;
+}
 
-  #h1_container {
-    width: 695px;
-    border-bottom: solid .5px #222222;
-    /* height: fit-content; */
-  }
+#h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Sour Gummy';
+  margin-left: 4.5%;
+  width: 100%;
+  /* height: fit-content; */
+}
 
-  #no_posts {
-    font-family: 'Sour Gummy';
-    margin-left: 4%;
-    width: 100%;
-    color: white;
-  }
+#h1_container {
+  width: 695px;
+  border-bottom: solid .5px #222222;
+  /* height: fit-content; */
+}
+
+#no_posts {
+  font-family: 'Sour Gummy';
+  margin-left: 4%;
+  width: 100%;
+  color: white;
+}
