@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { FaRegHeart, FaRegCommentDots, FaHeart, FaCog } from "react-icons/fa";
+import { useDispatch } from 'react-redux';
+import { FaRegHeart, FaRegCommentDots, FaHeart } from "react-icons/fa";
 import { thunkLoadLikes } from '../../redux/likes';
 import { thunkLoadFollows } from '../../redux/follows';
 import LikeModal from '../LikeModal/LikeModal';
 import CommentsModal from '../CommentsModal/CommentsModal';
 import FollowModal from '../FollowModal/FollowModal';
-import PostModal from '../PostModal/PostModal';
+// import PostModal from '../PostModal/PostModal';
 import { useModal } from '../../context/Modal';
 import './LikesPage.css';
 
@@ -19,7 +19,7 @@ function LikesPage() {
     const [followStatus, setFollowStatus] = useState({});
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const sessionUser = useSelector(state => state.session.user);
+    // const sessionUser = useSelector(state => state.session.user);
 
     useEffect(() => {
         fetch('/api/likes/current')
@@ -53,21 +53,21 @@ function LikesPage() {
         dispatch(thunkLoadLikes());
     };
 
-    const refreshPosts = async () => {
-        fetch('/api/likes/current')
-        .then((res) => res.json())
-        .then((data) => setLikes(data.likes))
-        .catch(async (res) => {
-            const data = await res.json();
-            if(data && data.errors) {
-                setErrors(data.errors);
-                console.log(errors);
-            }
-        });
+    // const refreshPosts = async () => {
+    //     fetch('/api/likes/current')
+    //     .then((res) => res.json())
+    //     .then((data) => setLikes(data.likes))
+    //     .catch(async (res) => {
+    //         const data = await res.json();
+    //         if(data && data.errors) {
+    //             setErrors(data.errors);
+    //             console.log(errors);
+    //         }
+    //     });
 
-        dispatch(thunkLoadFollows());    
-        dispatch(thunkLoadLikes());
-    };
+    //     dispatch(thunkLoadFollows());    
+    //     dispatch(thunkLoadLikes());
+    // };
 
     const checkFollowStatus = async (username) => {
         try {
@@ -139,9 +139,9 @@ function LikesPage() {
                             setModalContent(<CommentsModal postId={like.post_id} closeModal={closeModal}/> );
                         };
 
-                        const openPostModal = () => {
-                            setModalContent(<PostModal postId={like.post_id} existingTitle={like.title} existingDescription={like.description} closeModal={closeModal} refreshPosts={refreshPosts} />)
-                          }
+                        // const openPostModal = () => {
+                        //     setModalContent(<PostModal postId={like.post_id} existingTitle={like.title} existingDescription={like.description} closeModal={closeModal} refreshPosts={refreshPosts} />)
+                        //   }
 
                         const followButton = followStatus[like.poster_username]?.is_following ? "Following" : "Follow";
 
