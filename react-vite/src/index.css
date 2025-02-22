@@ -2,7 +2,6 @@ body {
   font-family: 'Alike', serif;
   color: #547375;
   background-color: #000002;
-  margin: 0 100px;
 }
 
 html {
@@ -18,11 +17,12 @@ html {
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
+  justify-content: center;
 }
 
 #nav-bar,
 #sidebar {
-  width: 25%;
+  width: 15%;
   height: 75vh;
   border-right: 1px solid #000000;
   overflow-y: auto;

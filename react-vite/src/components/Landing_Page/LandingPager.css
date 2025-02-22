@@ -32,6 +32,7 @@
 
   .post_container {
     width: 695px;
+    height: 795px;
     display: flex;
     justify-content: center;
     align-items: center;
